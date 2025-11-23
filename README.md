@@ -390,17 +390,16 @@
 
 ## 🔗 Быстрые Ссылки
 
-- 📖 [Мое резюме (LaTeX)](https://github.com/xWooshieL)
-- 📚 [Научная статья (MLFE)](https://github.com/xWooshieL/interview_analysis_pipeline)
-- 🐍 [Python проекты](https://github.com/xWooshieL)
-- 💻 [CV & Resume](https://github.com/xWooshieL)
+- 📖 [Мое резюме (LaTeX)](https://github.com/xWooshieL/xWooshieL/blob/main/rezume.pdf)
+- 📚 [Научная статья (MLFE)](https://github.com/xWooshieL/interview_analysis_pipeline/blob/main/MLFE%20Novitskiy.pdf)
+- 🐍 [Научная студия](https://github.com/xWooshieL/VariableStarAnalysis)
 
 ---
 
 ## 📝 Интересные Факты
 
 - 🎵 **Любитель музыки:** увлекаюсь музыкальной композицией и звукорежиссурой
-- 🎮 **Геймер:** фанат Osu!Lazer и других ритм-игр
+- 🎮 **Геймер:** фанат Minecraft, Osu! и других ритм-игр
 - 🔬 **Исследователь:** активно вовлечён в научные проекты
 - 🚀 **Инноватор:** разрабатываю новые методы в ML
 - 💡 **Lifelong Learner:** постоянно изучаю новые технологии
@@ -427,10 +426,10 @@
 
 ### 💬 Свяжись со мной!
 
-<a href="https://t.me/xwooshiel">
+<a href="https://t.me/ooaaoaoaoa">
   <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
 </a>
-<a href="https://vk.com/xwooshiel">
+<a href="https://vk.com/ooaaoaoa">
   <img src="https://img.shields.io/badge/VK-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK"/>
 </a>
 <a href="https://github.com/xWooshieL">
@@ -439,6 +438,6 @@
 
 ---
 
-**Made with ❤️ in Moscow 🇷🇺** | Last updated: November 2025
+**Made with ❤️ in Moscow 🇷🇺** | Last updated: 23 November 2025
 
 </div>
