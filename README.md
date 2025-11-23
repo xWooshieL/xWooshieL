@@ -251,7 +251,7 @@
       <br>
       <span style="color:#666;"><b>Бакалавриат</b> | Направление: Математика и компьютерные науки</span>
       <br>
-      <span style="color:#999;font-size:0.9em;">2024 - настоящее время | <b>Бюджетное место</b> 🎖️</span>
+      <span style="color:#999;font-size:0.9em;">2025 - настоящее время | <b>Бюджетное место</b> 🎖️</span>
       <br><br>
       <span style="color:#333;"><b>Уровни обучения:</b></span><br>
       <span style="color:#666;">
@@ -269,14 +269,14 @@
 <table>
   <tr>
     <td align="center" valign="top" width="100">
-      <img src="https://via.placeholder.com/80/E20051/FFFFFF?text=HSE" width="80" style="border-radius:10px;"/>
+      <img src="https://avatars.mds.yandex.net/i?id=f6b8ddc21d9d4767df96e917571f34d38d6eca25-5224535-images-thumbs&n=13" width="80" style="border-radius:10px;"/>
     </td>
     <td valign="top">
       <span style="font-size:1.1em;font-weight:bold;">🎓 НИУ ВШЭ (Высшая Школа Экономики)</span>
       <br>
       <span style="color:#666;"><b>Бакалавриат</b> | Программа: ФКН ПМИ</span>
       <br>
-      <span style="color:#999;font-size:0.9em;">2024 | Бюджетное место | <i>Переведён в ЦУ в 2025</i></span>
+      <span style="color:#999;font-size:0.9em;">2024-2025 | Бюджетное место | <i>Перепоступил в ЦУ в 2025</i></span>
       <br><br>
       <span style="color:#333;"><b>Опыт:</b> Фундаментальные знания в CS и математике</span>
     </td>
@@ -288,14 +288,14 @@
 <table>
   <tr>
     <td align="center" valign="top" width="100">
-      <img src="https://via.placeholder.com/80/1E40AF/FFFFFF?text=SCHOOL" width="80" style="border-radius:10px;"/>
+      <img src="https://doit-together.ru/upload/uf/d3e/d3eea90b407f581430b885922716a49e.jpg" width="80" style="border-radius:10px;"/>
     </td>
     <td valign="top">
       <span style="font-size:1.1em;font-weight:bold;">🏫 МАОУ СОШ №3 (г. Наро-Фоминск)</span>
       <br>
       <span style="color:#666;"><b>Среднее общее образование</b></span>
       <br>
-      <span style="color:#999;font-size:0.9em;">10-11 классы | Углублённое изучение информатики и математики</span>
+      <span style="color:#999;font-size:0.9em;">10-11 классы | Углублённое изучение английского, информатики и математики</span>
     </td>
   </tr>
 </table>
