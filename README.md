@@ -20,7 +20,7 @@
   <tr>
     <td style="padding: 8px 20px;">
       <p style="margin:8px 0;color:#333;font-size:0.95em;">
-        <b>📍 Образование:</b> Математика и компьютерные науки (синий & красный уровни)<br>
+        <b>📍 Образование:</b> Математика и компьютерные науки<br>
         <b>🎯 Специализация:</b> Machine Learning, NLP, Data Science<br>
         <b>🏫 Статус:</b> Бюджетное место 🎖️<br>
         <b>📚 Уровень:</b> Advanced Python | Machine Learning | Statistics
