@@ -370,30 +370,21 @@
 | Платформа | Профиль | Статус |
 |---|---|---|
 | 🐙 **GitHub** | [@xWooshieL](https://github.com/xWooshieL) | ⭐ Active |
-| 💬 **VK (ВКонтакте)** | [@xWooshieL](https://vk.com/xwooshiel) | ⭐ Active |
-| ✈️ **Telegram** | [@xWooshieL](https://t.me/xwooshiel) | ⭐ Active |
-| 📧 **Email** | [nikita@example.com](mailto:nikita@example.com) | 💌 Available |
+| 💬 **VK (ВКонтакте)** | [@ooaaoaoa](https://vk.com/ooaaoaoa) | ⭐ Active |
+| ✈️ **Telegram** | [@ooaaoaoaoa](https://t.me/ooaaoaoaoa) | ⭐ Active |
+| 📧 **Email** | [n.novitskiy@edu.centraluniversity.ru](mailto:n.novitskiy@edu.centraluniversity.ru) | 💌 Available |
 
 ---
-
-## 📊 GitHub Stats
-
-```
-🔥 Активный разработчик с опытом в Machine Learning
-📈 Вклад в Open Source проекты
-💡 Автор инновационного метода MLFE
-🏆 Многократный участник хакатонов
-```
-
 ---
 
 ## 🎓 Сертификаты & Награды
 
-- 🏆 **Финал MGIMO GPT CHALLENGE** (2024) - AI & NLP
-- 📄 **Научная публикация** (2024) - Метод MLFE
+- 🏆 **Финал MGIMO GPT CHALLENGE** (2025) - AI & NLP
+- 📄 **Научная статья** (2025) - Метод MLFE
 - 🥇 **Призёр Абилимпикс** (2023) - Веб-разработка
 - 📚 **СИРИУС.ИИ** (2023-2024) - AI & ML программа
-- 🎯 **Финалист олимпиады РТУ МИРЭА** (2023-2024) - Математика & Информатика
+- 🎯 **Финалист олимпиады РТУ МИРЭА** (2024) - Математика & Информатика
+- 🌐 **Выпускник Московской Школы Программистов (МШП)** (2022-2023) - Python
 
 ---
 
