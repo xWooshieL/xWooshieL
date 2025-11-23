@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td rowspan="4" align="center" valign="middle" style="padding: 16px;">
-      <img src="https://ui-avatars.com/api/?name=Nikita+Novitskiy&background=0E5E9D&color=fff&size=120" 
+      <img src="https://sun9-85.userapi.com/s/v1/ig2/Bg35GTBb1byvlqgofeoRB9YlcSHDS_EAeNW4QaWf2RTU8JTXap-DCmJiq8Qj2iCWI2gnkfBKV8lLV0QakpqWZedX.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x359,360x539,480x719,540x808,640x958,720x1078,855x1280&from=bu&cs=855x0" 
      width="120" 
      style="border-radius:50%;border:3px solid #0E5E9D;"/>
       <p style="font-size:0.9em;color:#666;margin-top:8px;"><strong>Machine Learning Engineer</strong></p>
