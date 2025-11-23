@@ -3,7 +3,9 @@
 <table>
   <tr>
     <td rowspan="4" align="center" valign="middle" style="padding: 16px;">
-      <img src="https://via.placeholder.com/120/0E5E9D/FFFFFF?text=NIKITA" width="120" style="border-radius:50%;border:3px solid #0E5E9D;"/>
+      <img src="https://ui-avatars.com/api/?name=Nikita+Novitskiy&background=0E5E9D&color=fff&size=120" 
+     width="120" 
+     style="border-radius:50%;border:3px solid #0E5E9D;"/>
       <p style="font-size:0.9em;color:#666;margin-top:8px;"><strong>Machine Learning Engineer</strong></p>
       <p style="font-size:0.8em;color:#999;">Москва 🇷🇺</p>
     </td>
