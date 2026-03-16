@@ -326,6 +326,28 @@
 
 ## 💻 Проекты & Работы
 
+### 🏗️ **ГК МОС — Система автоматического ценообразования**
+
+**Проект:** Интеллектуальная система поиска и верификации цен на строительные материалы и оборудование для инженерных систем (ИТП).
+
+**Описание:** Полноценная production-система которая принимает Excel с номенклатурой (клапаны, насосы, трубы, фитинги) и автоматически находит актуальные цены в интернете, проверяет характеристики и формирует отчёт.
+
+**Что я сделал:**
+- Архитектура: 10 модулей + 5 subpackages, ~10 000 LOC, 60+ файлов
+- ML модели: NER (SpaCy, дообученный на 277 примерах), Boundary CatBoost (98.4%), TPA CatBoost (72.5%)
+- Spec Match v2: 8 микро-модулей проверки технических характеристик (Ду, Ру, тип, ГОСТ, материал), 222 теста
+- 5-уровневый каскад поиска цен: Knowledge Base → Yandex API → Crawl4AI + BS4 → Direct Crawl → AI Analog
+- Boundary detector: гибрид Rule Engine (35 ключевых слов) + CatBoost на 11 500 авто-размеченных строках
+- Variant selector: выбор нужного варианта со страниц-каталогов (santech.ru, 11 вариантов Ду на одной странице)
+- Parallel pipeline: asyncio.gather, ускорение в 3x
+- Генератор тестовых датасетов из prices.csv (11 500 строк)
+- Аналитический Jupyter notebook: 12 секций визуализации
+- LaTeX документация: 35 страниц
+
+**Технологии:** Python, CatBoost, SpaCy NER, sentence-transformers, Crawl4AI, BeautifulSoup4, Yandex Search API, OpenRouter (Gemini), asyncio, pandas, openpyxl, pytest (350+ тестов)
+
+**Ссылка:** Приватный репозиторий ГК МОС
+
 ### 🔬 **MLFE (Multi-Level Feature Engineering) - Авторский метод**
 **Статья:** MULTI-LEVEL FEATURE ENGINEERING В PROMPT ENGINEERING: ПОВЫШЕНИЕ ЭФФЕКТИВНОСТИ ГЕНЕРАЦИИ ЧЕРЕЗ ИЕРАРХИЧЕСКИЙ СИНТЕЗ ПРИЗНАКОВ
 
@@ -438,6 +460,6 @@
 
 ---
 
-**Made with ❤️ in Moscow 🇷🇺** | Last updated: 23 November 2025
+**Made with ❤️ in Moscow 🇷🇺** | Last updated: 16 March 2026
 
 </div>
