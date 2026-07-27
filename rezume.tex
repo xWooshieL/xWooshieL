@@ -33,19 +33,19 @@
 }
 
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5em}
+\setlength{\parskip}{0.35em}
 
 \titleformat{\section}
   {\Large\bfseries\color{primarycolor}}
   {}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\section}{0pt}{10pt}{4pt}
 
 \titleformat{\subsection}
   {\large\bfseries\color{secondarycolor}}
   {}{0em}{}
-\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
 
-\setlist[itemize]{leftmargin=*, itemsep=2pt, parsep=0pt, topsep=4pt, label={\color{pasteldot}\textbullet}}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, parsep=0pt, topsep=2pt, label={\color{pasteldot}\textbullet}}
 
 \newcommand{\hlblue}[1]{\textcolor{pastelblue}{#1}}
 \newcommand{\hlgreen}[1]{\textcolor{pastelgreen}{#1}}
@@ -77,23 +77,27 @@
 }
 
 \newcommand{\cventry}[5]{
-  \noindent
+  \par\noindent
+  \begin{minipage}{\textwidth}
   \textbf{\color{primarycolor}#1} \hfill {\color{secondarycolor}\textit{#2}}\\
   {\color{secondarycolor}#3} \hfill {\color{secondarycolor}#4}
   \vspace{2pt}
 
   #5
-  \vspace{6pt}
+  \end{minipage}
+  \vspace{4pt}
 }
 
 \newcommand{\achievement}[4]{
-  \noindent
+  \par\noindent
+  \begin{minipage}{\textwidth}
   \textbf{\color{primarycolor}#1} \hfill {\color{secondarycolor}\textit{#2}}\\
   {\color{secondarycolor}#3}
   \vspace{2pt}
 
   #4
-  \vspace{6pt}
+  \end{minipage}
+  \vspace{4pt}
 }
 
 \begin{document}
@@ -112,11 +116,11 @@
 \begin{minipage}[t]{0.25\textwidth}
   \raggedleft
   \IfFileExists{photo_3.5x4.5cm_300dpi.jpg}{%
-    \includegraphics[width=3.5cm,height=3.5cm,keepaspectratio]{photo_3.5x4.5cm_300dpi.jpg}%
+    \includegraphics[width=3.2cm,height=3.2cm,keepaspectratio]{photo_3.5x4.5cm_300dpi.jpg}%
   }{}
 \end{minipage}
 
-\vspace{8pt}
+\vspace{4pt}
 
 \section{О себе}
 
