@@ -1,210 +1,426 @@
 \documentclass[11pt,a4paper]{article}
 
-% ==================== ПАКЕТЫ ====================
+% Пакеты
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
 \usepackage[russian]{babel}
-\usepackage{libertine}
-\usepackage[left=1.5cm,right=1.5cm,top=1.4cm,bottom=1.4cm]{geometry}
+\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
 \usepackage{graphicx}
-\usepackage[dvipsnames,svgnames]{xcolor}
-\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{multicol}
-\usepackage{setspace}
 \usepackage{fontawesome}
-\usepackage{ifthen}
 
-\linespread{1.12}
+% Цветовая схема
+\definecolor{primarycolor}{RGB}{14, 94, 157}
+\definecolor{secondarycolor}{RGB}{102, 102, 102}
+\definecolor{accentcolor}{RGB}{231, 76, 60}
+\definecolor{pastelblue}{RGB}{80, 140, 200}
+\definecolor{pastelgreen}{RGB}{70, 150, 120}
+\definecolor{pastelpurple}{RGB}{120, 100, 160}
+\definecolor{pastelteal}{RGB}{60, 140, 150}
+\definecolor{pastelorange}{RGB}{180, 130, 90}
+\definecolor{pastelrose}{RGB}{160, 100, 120}
+\definecolor{pasteldot}{RGB}{160, 190, 220}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primarycolor,
+    urlcolor=primarycolor,
+    pdfborder={0 0 0}
+}
+
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.28em}
-
-\definecolor{pastelblue}{RGB}{163,210,237}
-\definecolor{pastelpurple}{RGB}{200,170,220}
-\definecolor{accentblue}{RGB}{70,130,180}
-\definecolor{sectioncolor}{RGB}{50,50,50}
-\definecolor{softgray}{RGB}{100,100,100}
-
-\hypersetup{colorlinks=true,linkcolor=accentblue,urlcolor=accentblue,pdfborder={0 0 0}}
+\setlength{\parskip}{0.5em}
 
 \titleformat{\section}
-    {\Large\bfseries\color{sectioncolor}}
-    {}{0em}{}[\vspace{1pt}\textcolor{pastelpurple}{\hrule height 1.5pt}]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
+  {\Large\bfseries\color{primarycolor}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
 
-\setlist[itemize]{leftmargin=*, itemsep=1pt, parsep=0pt, topsep=2pt}
+\titleformat{\subsection}
+  {\large\bfseries\color{secondarycolor}}
+  {}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
 
-\newtcolorbox{highlightbox}[1][]{
-    enhanced, breakable,
-    colback=pastelblue!15, colframe=pastelblue!60!black,
-    sharp corners, boxrule=0.6pt,
-    left=5pt, right=5pt, top=3pt, bottom=3pt,
-    #1
+\setlist[itemize]{leftmargin=*, itemsep=2pt, parsep=0pt, topsep=4pt, label={\color{pasteldot}\textbullet}}
+
+\newcommand{\hlblue}[1]{\textcolor{pastelblue}{#1}}
+\newcommand{\hlgreen}[1]{\textcolor{pastelgreen}{#1}}
+\newcommand{\hlpurple}[1]{\textcolor{pastelpurple}{#1}}
+\newcommand{\hlteal}[1]{\textcolor{pastelteal}{#1}}
+\newcommand{\hlorange}[1]{\textcolor{pastelorange}{#1}}
+\newcommand{\hlrose}[1]{\textcolor{pastelrose}{#1}}
+
+\newcommand{\name}[1]{
+  \begin{center}
+    {\Huge\bfseries\color{primarycolor} #1}
+  \end{center}
+  \vspace{-8pt}
+}
+
+\newcommand{\tagline}[1]{
+  \begin{center}
+    {\large\color{secondarycolor} #1}
+  \end{center}
+  \vspace{4pt}
+}
+
+\newcommand{\contactinfo}[4]{
+  \begin{center}
+    \color{secondarycolor}
+    #1 \quad | \quad #2 \quad | \quad #3 \quad | \quad #4
+  \end{center}
+  \vspace{8pt}
 }
 
 \newcommand{\cventry}[5]{
-    \noindent\textbf{\color{accentblue}#1} \hfill {\color{softgray}\textit{#2}}\\
-    {\color{softgray}\small#3} \hfill {\color{softgray}\small#4}
-    \vspace{1pt}
-    #5\vspace{3pt}
+  \noindent
+  \textbf{\color{primarycolor}#1} \hfill {\color{secondarycolor}\textit{#2}}\\
+  {\color{secondarycolor}#3} \hfill {\color{secondarycolor}#4}
+  \vspace{2pt}
+
+  #5
+  \vspace{6pt}
 }
 
 \newcommand{\achievement}[4]{
-    \noindent\textbf{\color{accentblue}#1} \hfill {\color{softgray}\textit{#2}}\\
-    {\color{softgray}\small#3}
-    \vspace{1pt}
-    #4\vspace{3pt}
+  \noindent
+  \textbf{\color{primarycolor}#1} \hfill {\color{secondarycolor}\textit{#2}}\\
+  {\color{secondarycolor}#3}
+  \vspace{2pt}
+
+  #4
+  \vspace{6pt}
 }
 
 \begin{document}
 
-% ----- ЗАГОЛОВОК -----
-\noindent
-\begin{minipage}[t]{0.72\textwidth}
-  \begin{center}
-    {\LARGE\bfseries\color{sectioncolor} Никита Новицкий}\\[2pt]
-    {\normalsize\color{softgray} Математика и компьютерные науки, Центральный Университет (Т-Банк)}\\[5pt]
-    \color{softgray}\small
-    \faPhone~+7 (977) 414-09-73 \quad\textbar\quad
-    \href{mailto:n.novitskiy@edu.centraluniversity.ru}{\faEnvelope~n.novitskiy@edu.centraluniversity.ru}\\[2pt]
-    Москва \quad\textbar\quad
-    \href{https://github.com/xWooshieL}{\faGithub~xWooshieL}
-  \end{center}
+% Заголовок с фото
+\begin{minipage}[t]{0.7\textwidth}
+  \name{Никита Новицкий}
+  \tagline{Студент направления «Математика и компьютерные науки»}
+  \contactinfo
+    {\small +7 (977) 414-09-73}
+    {\tiny n.novitskiy@edu.centraluniversity.ru \normalsize}
+    {Москва, Россия}
+    {\small \href{https://github.com/xWooshieL}{github.com/xWooshieL}}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.25\textwidth}
   \raggedleft
   \IfFileExists{photo_3.5x4.5cm_300dpi.jpg}{%
-    \includegraphics[width=2.8cm,height=2.8cm,keepaspectratio]{photo_3.5x4.5cm_300dpi.jpg}%
+    \includegraphics[width=3.5cm,height=3.5cm,keepaspectratio]{photo_3.5x4.5cm_300dpi.jpg}%
   }{}
 \end{minipage}
 
-\vspace{4pt}
+\vspace{8pt}
 
 \section{О себе}
 
-Студент ЦУ на бюджете. Увлекаюсь ML, NLP и их применением в продуктах и научных проектах. Сильные навыки в Python, анализе данных и статистике. Целеустремлённый и усидчивый: на интересных задачах могу работать по 14--16 часов. Стремлюсь в AI/ML и хочу вносить вклад в проекты ведущих tech-компаний России.
+Студент \hlblue{Центрального Университета}  на бюджетной основе по направлению «Математика и компьютерные науки». Глубоко интересуюсь \hlgreen{машинным обучением}, \hlpurple{искусственным интеллектом} и их применением в научных исследованиях. Обладаю сильными навыками в программировании на Python, анализе данных и статистике.
+
+Целеустремлённый и усидчивый. При работе над проектами могу посвящать им до 16 часов в сутки, достигая глубокого понимания предмета. Стремлюсь развиваться в области AI/ML и внести вклад в инновационные проекты ведущих технологических компаний России.
 
 \section{Образование}
 
-\cventry{Центральный Университет (Т-Банк)}{2024 — н.в.}{Математика и компьютерные науки, бюджет}{Москва}{
-  \begin{itemize}
-    \item ML/AI, линейная алгебра, матан, статистика и теорвер
-    \item Python (продвинутый уровень); научные проекты MusicTech и студия по переменным звёздам
-  \end{itemize}
-}
+\cventry
+  {Центральный Университет}
+  {2025-- настоящее время}
+  {Бакалавриат: Математика и компьютерные науки}
+  {Москва}
+  {
+    \begin{itemize}
+      \item Обучение на \hlteal{бюджетной} основе
+      \item Специализация: Machine Learning и Artificial Intelligence
+      \item Математические курсы: основы линейной алгебры и математического анализа, дискретная математика
+      \item Продвинутое программирование: Python
+      \item Статистика и теория вероятностей, введение в искусственный интеллект, экономика
+      \item Участие в \hlorange{Научной студии} по переменным звёздам (применение ML в астрономии)
+      \item Участие в проекте \hlblue{MusicTech} (ИИ для музыкального образования, при поддержке Т-Банка)
+    \end{itemize}
+  }
 
-\cventry{НИУ ВШЭ}{2024—2025}{ФКН ПМИ, бюджет}{Москва}{
-  \begin{itemize}
-    \item Линейная алгебра, матан, дискретная математика, алгоритмы и структуры данных (Python, C++)
-  \end{itemize}
-}
+\cventry
+  {НИУ ВШЭ (Высшая Школа Экономики)}
+  {2024 -- 2025}
+  {Бакалавриат: ФКН ПМИ}
+  {Москва}
+  {
+    \begin{itemize}
+      \item Обучение на бюджетной основе
+      \item Математические курсы: линейная алгебра и геометрия, математический анализ, дискретная математика, теория чисел, алгебра
+      \item Программирование: введение в Python, Алгоритмы и структуры данных, введение с C++
+    \end{itemize}
+  }
 
-\cventry{МАОУ СОШ №3}{2024}{СОО, углублённо: английский, математика}{г. Наро-Фоминск}{}
+\cventry
+  {МАОУ СОШ №3}
+  {2024}
+  {Среднее общее образование}
+  {г. Наро-Фоминск}
+  {
+    \begin{itemize}
+      \item 10-11 классы с углублённым изучением английского и математики
+    \end{itemize}
+  }
 
-\section{Ключевые проекты}
+\section{Достижения в период студенчества (2024--2026)}
 
-\begin{highlightbox}
-  \textbf{М.Видео — Query Understanding / умный поиск} \hfill {\color{softgray}\textit{2026 · 2 место}}\\[2pt]
-  Промышленный буткемп М.Видео. Команда (Никита · Некит · Лиза) заняла \textbf{2 место}.
-  \begin{itemize}
-    \item Гибридный каскад: SpellFix $\to$ словари/regex $\to$ CRF NER (BIO) $\to$ классификаторы бренда, категории и типов атрибутов
-    \item Brand clf: 67 классов + NO\_BRAND/UNKNOWN, macro-F1 $\approx$ 0.94 на silver; честный gold-eval на 823 запросах
-    \item Эксперименты с GLiNER (zero-shot / fine-tune) как gated-хвост; FastAPI/CLI + нативный Qt SmartSearch
-    \item Репозиторий: \href{https://github.com/xWooshieL/mvideo-ner-search}{github.com/xWooshieL/mvideo-ner-search}
-  \end{itemize}
-\end{highlightbox}
+\achievement
+  {2 место · буткемп М.Видео (Query Understanding / NER)}
+  {2026}
+  {Промышленный кейс М.Видео по умному поиску и извлечению фактов из запросов}
+  {
+    \begin{itemize}
+      \item Команда (Никита · Некит · Лиза) заняла \hlblue{2 место} по итогам буткемпа
+      \item Гибридный каскад: SpellFix $\to$ словари/regex $\to$ CRF NER (BIO) $\to$ классификаторы бренда, категории и типов атрибутов
+      \item Brand clf: 67 классов + NO\_BRAND/UNKNOWN; честный gold-eval на 823 запросах
+      \item Эксперименты с GLiNER; тот же каскад в FastAPI/CLI и нативном Qt SmartSearch
+      \item GitHub: \href{https://github.com/xWooshieL/mvideo-ner-search}{github.com/xWooshieL/mvideo-ner-search}
+    \end{itemize}
+  }
 
-\vspace{3pt}
+\achievement
+  {Доклад на конференции «Научный Телеграф» · MusicTech}
+  {2026}
+  {Мультидисциплинарная молодёжная конференция Центрального университета}
+  {
+    \begin{itemize}
+      \item Проект \hlgreen{MusicTech} (ЦУ $\times$ Т-Банк): виртуальный оркестр / real-time score following на ИИ
+      \item Вместе с командой собрали MVP (HMM/HSMM/OLTW + RL для темпа), написали статью с математическими постановками
+      \item Выступление 17 мая 2026: этапы разработки и гипотезы (конференция: 500+ участников, 200+ докладов)
+      \item Статья: \href{https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf}{main.pdf} ·
+        слайды: \href{https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf}{presentation.pdf} ·
+        \href{https://musictech.tech}{musictech.tech}
+    \end{itemize}
+  }
 
-\begin{highlightbox}
-  \textbf{MusicTech — виртуальный оркестр / score following} \hfill {\color{softgray}\textit{2026 · ЦУ $\times$ Т-Банк}}\\[2pt]
-  Научный проект мастерской MusicTech: репетиция классического исполнителя с ИИ-аккомпанементом.
-  \begin{itemize}
-    \item MVP: HMM/HSMM/OLTW-бейзлайны + RL-модуль предсказания темпа; статья с математическими постановками
-    \item Доклад на конференции \textbf{«Научный Телеграф»} (ЦУ, 17 мая 2026; 500+ участников, 200+ докладов)
-    \item \href{https://github.com/xWooshieL/music-tech}{Репозиторий} ·
-      \href{https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf}{статья} ·
-      \href{https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf}{слайды} ·
-      \href{https://musictech.tech}{musictech.tech}
-  \end{itemize}
-\end{highlightbox}
+\achievement
+  {Разработка системы автоматического ценообразования ГК МОС}
+  {2026}
+  {Система поиска и верификации цен на строительные материалы для компании ГК МОС}
+  {
+    \begin{itemize}
+      \item Модуль извлечения данных: SpaCy NER (дообучен), regex, OpenRouter LLM
+      \item Модуль поиска цен: 5-уровневый каскад, Yandex API, Crawl4AI, BS4
+      \item Модуль верификации TPA (модель верификации, которая проверяет, что найденный на сайте товар совпадает с позицией из спецификации): sentence-transformers, Soundex, Levenshtein, CatBoost, Spec Match по техническим характеристикам
+      \item Модуль выбора цены: ранжирование, учёт НДС, отсечение выбросов
+      \item База знаний из цен, быстрый поиск по TPA для повторяющихся позиций
+      \item Python, 350+ unit-тестов
+    \end{itemize}
+  }
 
-\vspace{3pt}
+\achievement
+  {Абсолютный победитель хакатона MGIMO GPT CHALLENGE}
+  {2025}
+  {Престижный хакатон по промпт инжиниирингу и искусственному интеллекту}
+  {
+    \begin{itemize}
+      \item Прохождение в \hlblue{финальный этап} из сотен участников
+      \item Первое место в финальном этапе и приз в размере 200.000 рублей
+      \item Разработка инновационных решений в области NLP и Machine Learning
+      \item Работа над сложными задачами анализа текстов и генерации
+      \item Применение передовых методов prompt engineering и feature engineering
+    \end{itemize}
+  }
 
-\begin{highlightbox}
-  \textbf{ГК МОС — автоматический поиск и верификация цен} \hfill {\color{softgray}\textit{2026}}\\[2pt]
-  Production-система для спецификаций ИТП: Excel $\to$ NER/LLM $\to$ 5-уровневый поиск $\to$ Spec Match / TPA $\to$ выбор цены.
-  \begin{itemize}
-    \item SpaCy NER, Crawl4AI, Yandex API, sentence-transformers, CatBoost; $\sim$10k LOC, 350+ тестов
-  \end{itemize}
-\end{highlightbox}
+\achievement
+  {Автор научной публикации: метод MLFE}
+  {2025}
+  {Multi-Level Feature Engineering в Prompt Engineering}
+  {
+    \begin{itemize}
+      \item \hlgreen{Название:} «MULTI-LEVEL FEATURE ENGINEERING В PROMPT ENGINEERING: ПОВЫШЕНИЕ ЭФФЕКТИВНОСТИ ГЕНЕРАЦИИ ЧЕРЕЗ ИЕРАРХИЧЕСКИЙ СИНТЕЗ ПРИЗНАКОВ»
+      \item Разработка нового метода повышения качества работы больших языковых моделей
+      \item Научная статья опубликована в рамках хакатона MGIMO GPT CHALLENGE
+      \item GitHub: \href{https://github.com/xWooshieL/interview_analysis_pipeline/blob/main/MLFE\%20Novitskiy.pdf}{github.com/xWooshieL/interview\_analysis\_pipeline}
+    \end{itemize}
+  }
 
-\section{Достижения (2024—2026)}
+\achievement
+  {Участник научной студии по переменным звёздам}
+  {2025}
+  {Центральный Университет}
+  {
+    \begin{itemize}
+      \item Применение методов машинного обучения для \hlpurple{предсказания переменности звёзд}
+      \item Работа с реальными астрономическими данными и временными рядами
+      \item Участие в Kaggle соревновании в рамках исследования научной студии университета
+      \item Разработка, обучение и оптимизация собственных моделей классификации
+      \item Использование математики и ML для решения научных задач
+      \item Собственная статья с решением проблемы
+      \item Обучали модель с использованием sklearn, CatBoost, xgboost и стандартных ML-алгоритмов
+      \item Kaggle: \href{https://www.kaggle.com/competitions/cu-science-studio-variable-stars-fall-25/}{https://www.kaggle.com/competitions/cu-science-studio-variable-stars-fall-25/}
+    \end{itemize}
+  }
 
-\achievement{2 место · буткемп М.Видео}{2026}{Query Understanding / NER / smart search}{
-  \begin{itemize}
-    \item Командное 2 место: каскад извлечения фактов из поисковых запросов, gold-метрики, сервис и Qt-приложение
-  \end{itemize}
-}
+\newpage
 
-\achievement{Доклад на «Научном Телеграфе»}{2026}{Мультидисциплинарная молодёжная конференция ЦУ}{
-  \begin{itemize}
-    \item MusicTech: этапы разработки виртуального оркестра, формулы score following, презентация MVP
-  \end{itemize}
-}
+\section{Достижения в школьные годы (2022--2024)}
 
-\achievement{Абсолютный победитель MGIMO GPT CHALLENGE}{2025}{Хакатон по prompt engineering и AI}{
-  \begin{itemize}
-    \item 1 место в финале, приз 200\,000 руб. NLP, ML, prompt/feature engineering
-  \end{itemize}
-}
+\achievement
+  {Призёр регионального этапа чемпионата «Абилимпикс»}
+  {2023}
+  {Компетенция: Веб-Разработка}
+  {
+    \begin{itemize}
+      \item Третье место на региональном уровне престижного чемпионата
+      \item Демонстрация навыков в современных веб-технологиях
+    \end{itemize}
+  }
 
-\achievement{Автор научной публикации: метод MLFE}{2025}{Multi-Level Feature Engineering в prompt engineering}{
-  \begin{itemize}
-    \item Повышение качества генерации LLM. \href{https://github.com/xWooshieL/interview_analysis_pipeline}{github.com/xWooshieL/interview\_analysis\_pipeline}
-  \end{itemize}
-}
+\achievement
+  {Участник всероссийской программы «СИРИУС.ИИ»}
+  {2023, 2024}
+  {Дважды принял участие}
+  {
+    \begin{itemize}
+      \item Двукратное участие в престижной образовательной программе
+      \item Углублённое изучение искусственного интеллекта и машинного обучения
+      \item Работа над практическими проектами в области ML и AI
+    \end{itemize}
+  }
 
-\achievement{Научная студия: переменные звёзды}{2025}{Центральный Университет}{
-  \begin{itemize}
-    \item Классификация по кривым блеска: SSMM, Distribution Fields, LM3L, CatBoost/RF. Kaggle CU Science Studio
-  \end{itemize}
-}
+\achievement
+  {Финалист олимпиады РТУ МИРЭА}
+  {2024}
+  {Математика и информатика}
+  {
+    \begin{itemize}
+      \item Прохождение в заключительный этап олимпиады
+    \end{itemize}
+  }
 
-\section{Достижения (2022—2024)}
+\achievement
+  {Участник зимней школы ВШЭ Санкт-Петербург}
+  {2024}
+  {Практическое программирование и анализ данных}
+  {
+    \begin{itemize}
+      \item Интенсивное обучение современным методам Data Science
+      \item Практика в области анализа данных и алгоритмического программирования
+    \end{itemize}
+  }
 
-\achievement{Призёр Абилимпикс, регион}{2023}{Веб-разработка}{Третье место.}
-\achievement{СИРИУС.ИИ}{2023, 2024}{}{Двукратное участие, ML/AI.}
-\achievement{Финалист олимпиады РТУ МИРЭА}{2024}{Математика, информатика}{}
-\achievement{Зимняя школа ВШЭ СПб}{2024}{}{Data Science.}
-\achievement{Московская Школа Программистов}{2022—2023}{}{Python, продвинутый курс.}
-\achievement{SMARTCUP (МПГУ, Skysmart)}{2023}{}{Чат-бот ВКонтакте с ИИ.}
+\achievement
+  {Выпускник Московской Школы Программистов}
+  {2022 -- 2023}
+  {Годичный курс по Python}
+  {
+    \begin{itemize}
+      \item Успешное прохождение профессионального курса
+      \item Освоение продвинутых техник программирования и алгоритмов
+    \end{itemize}
+  }
+
+\achievement
+  {Участник олимпиады SMARTCUP}
+  {2023}
+  {МПГУ и Skysmart}
+  {
+    \begin{itemize}
+      \item Разработка \hlteal{чат-бота для ВКонтакте} с интеграцией ИИ
+      \item Работа с API социальных сетей и современными технологиями
+      \item Применение искусственного интеллекта в real-time приложениях
+    \end{itemize}
+  }
+
+\newpage
 
 \section{Технические навыки}
 
 \begin{multicols}{2}
-\textbf{\color{accentblue}Программирование}\\[1pt]
-Python, ООП, алгоритмы, Git, C++/Qt (базово), Bash
+\subsection*{Программирование}
+\begin{itemize}
+  \item Python (продвинутый уровень)
+  \item ООП и функциональное программирование
+  \item Алгоритмы и структуры данных
+  \item Git/GitHub
+  \item C++/Qt (нативные приложения)
+\end{itemize}
+
+\subsection*{Machine Learning}
+\begin{itemize}
+  \item Scikit-learn
+  \item Feature Engineering
+  \item Ensemble Methods
+  \item Model Training \& Optimization
+  \item CatBoost, XGBoost
+\end{itemize}
 
 \columnbreak
 
-\textbf{\color{accentblue}ML \& NLP}\\[1pt]
-sklearn, CatBoost, CRF, SpaCy, sentence-transformers, GLiNER, LLM / prompt engineering
+\subsection*{Data Analysis}
+\begin{itemize}
+  \item NumPy, Pandas
+  \item Статистический анализ
+  \item Временные ряды
+  \item Matplotlib (визуализация)
+\end{itemize}
+
+\subsection*{NLP \& AI}
+\begin{itemize}
+  \item NER (CRF, SpaCy, BIO-разметка)
+  \item Entity extraction / Query Understanding
+  \item SpellFix, словари, regex-каскады
+  \item GLiNER, sentence-transformers
+  \item Prompt Engineering, работа с LLM
+  \item Текстовый анализ, MLFE методология
+\end{itemize}
 \end{multicols}
 
-\noindent\textbf{\color{accentblue}Data \& backend:} NumPy, Pandas, FastAPI, asyncio, pytest, Jupyter, LaTeX.
+\subsection*{Backend \& сервисы}
+\begin{itemize}
+  \item FastAPI, CLI, asyncio
+  \item REST API, pytest
+\end{itemize}
 
-\textbf{\color{accentblue}Математика:} линейная алгебра, матан, статистика, теория вероятностей.
+\subsection*{Математика}
+\begin{itemize}
+  \item Линейная алгебра и математический анализ (продвинутый уровень)
+  \item Статистика и теория вероятностей (продвинутый уровень)
+\end{itemize}
+
+\subsection*{Инструменты}
+\begin{itemize}
+  \item Jupyter Notebook, VS Code, LaTeX, Overleaf
+  \item Основы веб-разработки, работа с API, разработка чат-ботов
+\end{itemize}
+
+\newpage
+
+\section{Профессиональные качества}
+
+\begin{itemize}
+  \item \hlblue{Усидчивость и концентрация:} способен полностью погружаться в интересующие задачи, посвящая им до 16 часов в сутки для достижения глубокого понимания
+  \item \hlgreen{Самостоятельное обучение:} быстро осваиваю новые технологии и методы, активно изучаю актуальные исследования в области ML/AI
+  \item \hlpurple{Командная работа:} опыт успешного взаимодействия в команде на хакатонах и олимпиадах
+  \item \hlteal{Аналитическое мышление:} способность решать сложные задачи, разбивая их на подзадачи и применяя системный подход
+  \item \hlorange{Стремление к развитию:} постоянно работаю над совершенствованием навыков и преодолением слабых сторон
+\end{itemize}
 
 \section{Карьерные цели}
 
-Стремлюсь в AI/ML. Интересуют позиции в \textbf{Яндексе}, Т-Банке, Сбере — прикладной NLP/поиск, исследования ML и работа с LLM.
+Стремлюсь развиваться в области \hlblue{искусственного интеллекта} и \hlgreen{машинного обучения}. Заинтересован в работе в ведущих технологических компаниях России (\hlpurple{Яндекс}, \hlteal{Т-Банк}, \hlorange{Сбер}), где смогу:
+
+\begin{itemize}
+  \item Применять свои знания в ML/AI для решения реальных бизнес-задач
+  \item Работать с высококвалифицированными специалистами и обмениваться опытом
+  \item Участвовать в создании инновационных продуктов и исследованиях
+  \item Развивать свои навыки в области Data Science и AI-систем
+  \item Вносить значимый вклад в развитие российских технологий
+\end{itemize}
+
+Особый интерес представляют позиции, связанные с \hlrose{исследованиями в области ML/AI}, разработкой интеллектуальных систем, анализом данных и работой с большими языковыми моделями.
 
 \section{Языки}
 
-Русский — родной. Английский — технический (документация, статьи).
+\begin{itemize}
+  \item \hlblue{Русский:} родной язык
+  \item \hlgreen{Английский:} технический английский (уверенное чтение документации, научных статей, участие в международных проектах)
+\end{itemize}
 
 \end{document}
