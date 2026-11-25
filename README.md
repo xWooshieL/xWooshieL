@@ -22,7 +22,7 @@
       <p style="margin:8px 0;color:#333;font-size:0.95em;">
         <b>📍 Образование:</b> Математика и компьютерные науки<br>
         <b>🎯 Специализация:</b> Machine Learning, NLP, Data Science<br>
-        <b>🏫 Статус:</b> Бюджетное место 🎖️<br>
+        <b>🏫 Статус:</b> Бюджетное место 🎖<br>
         <b>📚 Уровень:</b> Advanced Python | Machine Learning | Statistics
       </p>
     </td>
@@ -57,17 +57,18 @@
 
 ## 🏆 Личные Достижения
 
-| 🎖️ Место | 📅 Год | 🎯 Событие | 📝 Описание |
+| 🎖 Место | 📅 Год | 🎯 Событие | 📝 Описание |
 |---|---|---|---|
-| 🥈 **2 место** | 2026 | **Буткемп М.Видео · Query Understanding / NER** | Командой заняли **2 место** по итогам промышленного буткемпа: гибридный каскад извлечения фактов из поисковых запросов (SpellFix → словари/regex → CRF → brand/category/ATTR classifiers), gold-eval, FastAPI/CLI и нативный Qt SmartSearch. [Репозиторий](https://github.com/xWooshieL/mvideo-ner-search) |
-| 🔬 **Доклад + статья** | 2026 | **«Научный Телеграф» (ЦУ) · MusicTech** | Выступил на первой мультидисциплинарной молодёжной конференции Центрального университета **«Научный Телеграф»** (17 мая 2026, 500+ участников, 200+ докладов) с проектом виртуального оркестра на ИИ. [Статья](https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf) · [Слайды](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf) |
+| 🥈 **2 место** | 2026 | **Заповедный хакатон (ЦУ) - Умная аналитика метеоданных** | Командой заняли **2 место** в треке "Умная аналитика метеоданных" хакатона Центрального университета "Добро пожаловать на Заповедный Хакатон!". Пайплайн анализа и интерполяции метеорологических рядов заповедника, дашборды, экспорт. [Репозиторий](https://github.com/Nizier193/zapovednik-hack) |
+| 🥈 **2 место** | 2026 | **Буткемп М.Видео - Query Understanding / NER** | Командой заняли **2 место** по итогам промышленного буткемпа: гибридный каскад извлечения фактов из поисковых запросов (SpellFix -> словари/regex -> CRF -> brand/category/ATTR classifiers), gold-eval, FastAPI/CLI и нативный Qt SmartSearch. [Репозиторий](https://github.com/xWooshieL/mvideo-ner-search) |
+| 🔬 **Доклад + статья** | 2026 | **"Научный Телеграф" (ЦУ) - MusicTech** | Выступил на первой мультидисциплинарной молодёжной конференции Центрального университета **"Научный Телеграф"** (17 мая 2026, 500+ участников, 200+ докладов) с проектом виртуального оркестра на ИИ. [Статья](https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf) - [Слайды](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf) |
 | 🏅 **1 место** | 2025 | **MGIMO GPT CHALLENGE** | Стал абсолютным победителем в финальном этапе престижного хакатона по искусственному интеллекту и разработал инновационное решение в области NLP (200.000 рублей) |
 | 📄 **Публикация** | 2025 | **Метод MLFE (Multi-Level Feature Engineering)** | Автор научной статьи с описанием метода MLFE в prompt engineering для повышения качества LLM. [GitHub](https://github.com/xWooshieL/interview_analysis_pipeline) |
 | 🔬 **Участие** | 2025 | **Научная Студия ЦУ** | Применение ML для предсказания переменности звёзд. Работа с реальными астрономическими данными и моделями классификации |
 | 🥇 **3 место** | 2023 | **Абилимпикс (Веб-Разработка)** | Региональный этап чемпионата. Демонстрация навыков в современных веб-технологиях |
 | 📚 **Прошёл во 2 этап** | 2023-2024 | **СИРИУС.ИИ** | Двукратный участник всероссийской программы по искусственному интеллекту и ML |
 | 🏆 **Финалист** | 2024 | **Олимпиада РТУ МИРЭА** | Заключительный этап в математике и информатике. Решение сложных задач алгоритмики |
-| ❄️ **Зимняя школа** | 2024 | **ВШЭ СПб** | Практическое программирование и анализ данных. Интенсивное обучение методам Data Science |
+| ❄ **Зимняя школа** | 2024 | **ВШЭ СПб** | Практическое программирование и анализ данных. Интенсивное обучение методам Data Science |
 | 🐍 **Курс** | 2022-2023 | **Московская Школа Программистов** | Годичный курс по Python. Освоение продвинутых техник программирования |
 | 💬 **Чат-бот** | 2023  | **Олимпиада SMARTCUP** | Разработка AI-чат-бота для ВКонтакте с интеграцией искусственного интеллекта |
 
@@ -92,7 +93,7 @@
 
 ---
 
-## 🛠️ Технический Стек
+## 🛠 Технический Стек
 
 ### 🐍 **Языки программирования**
 <table>
@@ -128,7 +129,7 @@
       <span>🔥 <strong>PyTorch</strong> - глубокое обучение и нейронные сети</span><br>
       <span>🎯 <strong>Feature Engineering</strong> - MLFE (Multi-Level Feature Engineering) - авторский метод</span><br>
       <span>📊 <strong>Ensemble Methods</strong> - VotingClassifier, StackingClassifier, Boosting</span><br>
-      <span>⚖️ <strong>Model Evaluation</strong> - метрики, кроссвалидация, гиперпараметризация</span><br>
+      <span>⚖ <strong>Model Evaluation</strong> - метрики, кроссвалидация, гиперпараметризация</span><br>
     </td>
   </tr>
 </table>
@@ -148,12 +149,12 @@
       <span>🕐 <strong>Time Series Analysis</strong> - работа с временными рядами, ARIMA, forecasting</span><br>
       <span>📐 <strong>Statistics & Probability</strong> - статистический анализ, гипотезы (продвинутый уровень)</span><br>
       <span>🔍 <strong>EDA (Exploratory Data Analysis)</strong> - исследовательский анализ данных</span><br>
-      <span>⚙️ <strong>Data Preprocessing</strong> - нормализация, кодирование, обработка пропусков</span>
+      <span>⚙ <strong>Data Preprocessing</strong> - нормализация, кодирование, обработка пропусков</span>
     </td>
   </tr>
 </table>
 
-### 🗣️ **Natural Language Processing & LLM**
+### 🗣 **Natural Language Processing & LLM**
 <table>
   <tr>
     <td align="center" valign="top" width="80">
@@ -165,7 +166,7 @@
       <span>📚 <strong>RAG (Retrieval-Augmented Generation)</strong> - работа с базами знаний</span><br>
       <span>🎯 <strong>Prompt Engineering</strong> - оптимизация запросов для LLM</span><br>
       <span>🌲 <strong>MLFE (Multi-Level Feature Engineering)</strong> - авторский метод иерархического синтеза признаков</span><br>
-      <span>⚙️ <strong>LLM Finetuning</strong> - дообучение моделей (GPT-2, BERT)</span><br>
+      <span>⚙ <strong>LLM Finetuning</strong> - дообучение моделей (GPT-2, BERT)</span><br>
       <span>🔗 <strong>Text Embeddings</strong> - векторизация текста, similarity search</span><br>
       <span>🤖 <strong>LLM Frameworks</strong> - LangChain, LlamaIndex для управления моделями</span>
     </td>
@@ -176,7 +177,7 @@
 <table>
   <tr>
     <td align="center" valign="top" width="80">
-      <span style="font-size:3em;">🖥️</span>
+      <span style="font-size:3em;">🖥</span>
     </td>
     <td valign="top">
       <span style="font-size:1.2em;font-weight:bold;">Backend Development</span>
@@ -192,7 +193,7 @@
 <table>
   <tr>
     <td align="center" valign="top" width="80">
-      <span style="font-size:3em;">🗄️</span>
+      <span style="font-size:3em;">🗄</span>
     </td>
     <td valign="top">
       <span style="font-size:1.2em;font-weight:bold;">Databases & Data Storage</span>
@@ -220,11 +221,11 @@
   </tr>
 </table>
 
-### 🛠️ **Инструменты & DevOps**
+### 🛠 **Инструменты & DevOps**
 <table>
   <tr>
     <td align="center" valign="top" width="80">
-      <span style="font-size:3em;">⚙️</span>
+      <span style="font-size:3em;">⚙</span>
     </td>
     <td valign="top">
       <span style="font-size:1.2em;font-weight:bold;">Tools & DevOps</span>
@@ -234,7 +235,7 @@
       <span>💻 <strong>VS Code</strong> - IDE для разработки</span><br>
       <span>📘 <strong>LaTeX</strong> - создание научных документов и резюме</span><br>
       <span>🐳 <strong>Docker</strong> - контейнеризация приложений (базовые знания)</span><br>
-      <span>☁️ <strong>Overleaf</strong> - облачный LaTeX редактор</span>
+      <span>☁ <strong>Overleaf</strong> - облачный LaTeX редактор</span>
     </td>
   </tr>
 </table>
@@ -253,14 +254,14 @@
       <br>
       <span style="color:#666;"><b>Бакалавриат</b> | Направление: Математика и компьютерные науки</span>
       <br>
-      <span style="color:#999;font-size:0.9em;">2025 - настоящее время | <b>Бюджетное место</b> 🎖️</span>
+      <span style="color:#999;font-size:0.9em;">2025 - настоящее время | <b>Бюджетное место</b> 🎖</span>
       <br><br>
       <span style="color:#333;"><b>Уровни обучения:</b></span><br>
       <span style="color:#666;">
-        • 🔵 Синий: Линейная алгебра, Математический анализ<br>
-        • 🔴 Красный: Python (продвинутый), Статистика<br>
-        • ⚫ Чёрный: Статистика & Теория вероятностей (сложный уровень)<br>
-        • 🔬 Научная студия: ML в астрономии (переменные звёзды)
+        - 🔵 Синий: Линейная алгебра, Математический анализ<br>
+        - 🔴 Красный: Python (продвинутый), Статистика<br>
+        - ⚫ Чёрный: Статистика & Теория вероятностей (сложный уровень)<br>
+        - 🔬 Научная студия: ML в астрономии (переменные звёзды)
       </span>
     </td>
   </tr>
@@ -293,7 +294,7 @@
       <img src="https://doit-together.ru/upload/uf/d3e/d3eea90b407f581430b885922716a49e.jpg" width="80" style="border-radius:10px;"/>
     </td>
     <td valign="top">
-      <span style="font-size:1.1em;font-weight:bold;">🏫 МАОУ СОШ №3 (г. Наро-Фоминск)</span>
+      <span style="font-size:1.1em;font-weight:bold;">🏫 МАОУ СОШ N3 (г. Наро-Фоминск)</span>
       <br>
       <span style="color:#666;"><b>Среднее общее образование</b></span>
       <br>
@@ -328,16 +329,16 @@
 
 ## 💻 Проекты & Работы
 
-### 🎵 **MusicTech — виртуальный оркестр и score following (ЦУ × Т-Банк)**
+### 🎵 **MusicTech - виртуальный оркестр и score following (ЦУ x Т-Банк)**
 
-**Проект:** Научный и учебный проект мастерской **MusicTech** в Центральном университете при поддержке **Т-Банка**. MusicTech — часть инициативы по развитию инновационных цифровых продуктов в музыкальном образовании: ИИ-инструменты для музыкантов и студентов на репетициях и в обучении.
+**Проект:** Научный и учебный проект мастерской **MusicTech** в Центральном университете при поддержке **Т-Банка**. MusicTech - часть инициативы по развитию инновационных цифровых продуктов в музыкальном образовании: ИИ-инструменты для музыкантов и студентов на репетициях и в обучении.
 
 **Задача:** приложение, в котором исполнитель классической музыки репетирует с **виртуальным оркестром на основе ИИ** (real-time score following / аккомпанемент).
 
 **Что сделали в срок (я + лучший друг / сосед по общаге, студент ЦУ + ещё один участник команды):**
 - Собрали **MVP** пайплайна score following: бейзлайны HMM / HSMM / OLTW + RL-модуль предсказания темпа для оркестрового аккомпанемента
 - Подготовили научную статью и тезисы, ввели и обосновали математические постановки/формулы по следованию за партитурой
-- Выступили с докладом на конференции **«Научный Телеграф»** (Центральный университет, **17 мая 2026**): рассказали этапы разработки, метрики и гипотезы следующих шагов (в т.ч. трек ISMIR)
+- Выступили с докладом на конференции **"Научный Телеграф"** (Центральный университет, **17 мая 2026**): рассказали этапы разработки, метрики и гипотезы следующих шагов (в т.ч. трек ISMIR)
 - Оформили landing и открытый репозиторий с кодом, PDF статьи и слайдами
 
 **Технологии:** Python, HMM/HSMM, OLTW/DTW, RL для темпа, LaTeX (статья + beamer), веб-landing
@@ -345,24 +346,24 @@
 **Ссылки:**
 - [Репозиторий MusicTech](https://github.com/xWooshieL/music-tech)
 - [Статья (PDF)](https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf)
-- [Презентация «Научный Телеграф» (PDF)](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf)
-- [Landing](https://musictech.tech) · [GitHub Pages](https://xwooshiel.github.io/music-tech/)
+- [Презентация "Научный Телеграф" (PDF)](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf)
+- [Landing](https://musictech.tech) - [GitHub Pages](https://xwooshiel.github.io/music-tech/)
 
 ---
 
-### 🛒 **М.Видео — умный поиск / Query Understanding (2 место)**
+### 🛒 **М.Видео - умный поиск / Query Understanding (2 место)**
 
-**Событие:** промышленный буткемп / кейс **М.Видео** по NLP и поиску. Команда (**Никита · Некит · Лиза**) заняла **2 место** по итогам.
+**Событие:** промышленный буткемп / кейс **М.Видео** по NLP и поиску. Команда (**Никита - Некит - Лиза**) заняла **2 место** по итогам.
 
-**Задача:** научиться **понимать грязный поисковый запрос** e-commerce и доставать структурированные факты (бренд, категория, модель, атрибуты) для ранжирования каталога — не «чёрный ящик», а каскад с честными метриками и SLA.
+**Задача:** научиться **понимать грязный поисковый запрос** e-commerce и доставать структурированные факты (бренд, категория, модель, атрибуты) для ранжирования каталога - не "чёрный ящик", а каскад с честными метриками и SLA.
 
 **Что сделали (подробно):**
-- **EDA и постановка:** разобрали кликовые логи, дыры в карточках, транслит/омоглифы/раскладку, дубли брендов; подтвердили гипотезы (короткие категорийные запросы, бренд часто не написан явно, атрибуты пишут как попало — нужен clf, не один regex)
+- **EDA и постановка:** разобрали кликовые логи, дыры в карточках, транслит/омоглифы/раскладку, дубли брендов; подтвердили гипотезы (короткие категорийные запросы, бренд часто не написан явно, атрибуты пишут как попало - нужен clf, не один regex)
 - **Слой 1 (голова):** единая предобработка, словари, regex на атрибуты, тег **MODEL** (майнинг линеек из названий SKU), схема **BIO** для обучения
-- **Слой 2 (середина):** **SpellFix** (fuzzy, гомоглифы, алиасы транслита) → словари → **CRF NER** → классификаторы **бренда** (67 классов + NO_BRAND/UNKNOWN, macro-F1 ≈ 0.94 на silver), **категории** и **типов атрибутов**; отказ лучше ложного бренда
+- **Слой 2 (середина):** **SpellFix** (fuzzy, гомоглифы, алиасы транслита) -> словари -> **CRF NER** -> классификаторы **бренда** (67 классов + NO_BRAND/UNKNOWN, macro-F1 ~ 0.94 на silver), **категории** и **типов атрибутов**; отказ лучше ложного бренда
 - **Слой 3 (хвост):** эксперименты с **GLiNER** (zero-shot и fine-tune на gold+silver), joint-study на одном silver: GLiNER только как gated хвост, не на каждый запрос
 - **Продукт:** нативные C++/Qt приложения **SmartSearch** и разметки; тот же каскад в **FastAPI** (`/extract`, `/extract/debug`) и CLI
-- **Честные метрики:** gold-инференс на **823** запросах (CRF micro-F1 ≈ 0.543), latency rules+CRF порядка **десятков мс** (вписываемся в SLA; GLiNER ~250 мс — только с гейтом)
+- **Честные метрики:** gold-инференс на **823** запросах (CRF micro-F1 ~ 0.543), latency rules+CRF порядка **десятков мс** (вписываемся в SLA; GLiNER ~250 мс - только с гейтом)
 
 **Технологии:** Python, CRF, TF-IDF/LogReg classifiers, SpellFix, GLiNER, FastAPI, C++/Qt, LaTeX-презентации, Inno Setup
 
@@ -370,7 +371,7 @@
 
 ---
 
-### 🏗️ **ГК МОС - Система автоматического ценообразования**
+### 🏗 **ГК МОС - Система автоматического ценообразования**
 
 **Проект:** Интеллектуальная система поиска и верификации цен на строительные материалы и оборудование для инженерных систем (ИТП).
 
@@ -380,7 +381,7 @@
 - Архитектура: 10 модулей + 5 subpackages, ~10 000 LOC, 60+ файлов
 - ML модели: NER (SpaCy, дообученный на 277 примерах), Boundary CatBoost (98.4%), TPA CatBoost (72.5%)
 - Spec Match v2: 8 микро-модулей проверки технических характеристик (Ду, Ру, тип, ГОСТ, материал), 222 теста
-- 5-уровневый каскад поиска цен: Knowledge Base → Yandex API → Crawl4AI + BS4 → Direct Crawl → AI Analog
+- 5-уровневый каскад поиска цен: Knowledge Base -> Yandex API -> Crawl4AI + BS4 -> Direct Crawl -> AI Analog
 - Boundary detector: гибрид Rule Engine (35 ключевых слов) + CatBoost на 11 500 авто-размеченных строках
 - Variant selector: выбор нужного варианта со страниц-каталогов (santech.ru, 11 вариантов Ду на одной странице)
 - Parallel pipeline: asyncio.gather, ускорение в 3x
@@ -437,7 +438,7 @@
 |---|---|---|
 | 🐙 **GitHub** | [@xWooshieL](https://github.com/xWooshieL) | ⭐ Active |
 | 💬 **VK (ВКонтакте)** | [@ooaaoaoa](https://vk.com/ooaaoaoa) | ⭐ Active |
-| ✈️ **Telegram** | [@ooaaoaoaoa](https://t.me/ooaaoaoaoa) | ⭐ Active |
+| ✈ **Telegram** | [@ooaaoaoaoa](https://t.me/ooaaoaoaoa) | ⭐ Active |
 | 📧 **Email** | [n.novitskiy@edu.centraluniversity.ru](mailto:n.novitskiy@edu.centraluniversity.ru) | 💌 Available |
 
 ---
@@ -445,8 +446,9 @@
 
 ## 🎓 Сертификаты & Награды
 
-- 🥈 **2 место · буткемп М.Видео** (2026) — Query Understanding / NER / smart search
-- 🔬 **Доклад на «Научном Телеграфе»** (2026, ЦУ) — MusicTech, виртуальный оркестр / score following
+- 🥈 **2 место - Заповедный хакатон (ЦУ, трек "Умная аналитика метеоданных")** (2026) - пайплайн метеоархива, дашборды
+- 🥈 **2 место - буткемп М.Видео** (2026) - Query Understanding / NER / smart search
+- 🔬 **Доклад на "Научном Телеграфе"** (2026, ЦУ) - MusicTech, виртуальный оркестр / score following
 - 🏆 **Диплом победителя MGIMO GPT CHALLENGE** (2025) - AI & NLP
 - 📄 **Научная статья** (2025) - Метод MLFE
 - 🥇 **Призёр Абилимпикс** (2023) - Веб-разработка
@@ -459,8 +461,8 @@
 ## 🔗 Быстрые Ссылки
 
 - 📖 [Мое резюме (LaTeX)](https://github.com/xWooshieL/xWooshieL/blob/main/rezume.pdf)
-- 🛒 [М.Видео · умный поиск (2 место)](https://github.com/xWooshieL/mvideo-ner-search)
-- 🎵 [MusicTech · статья](https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf) · [слайды Телеграфа](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf)
+- 🛒 [М.Видео - умный поиск (2 место)](https://github.com/xWooshieL/mvideo-ner-search)
+- 🎵 [MusicTech - статья](https://github.com/xWooshieL/music-tech/blob/master/article/main.pdf) - [слайды Телеграфа](https://github.com/xWooshieL/music-tech/blob/master/article/presentation/presentation.pdf)
 - 📚 [Научная статья (MLFE)](https://github.com/xWooshieL/interview_analysis_pipeline/blob/main/MLFE%20Novitskiy.pdf)
 - 🐍 [Научная студия](https://github.com/xWooshieL/VariableStarAnalysis)
 
@@ -508,6 +510,6 @@
 
 ---
 
-**Made with ❤️ in Moscow 🇷🇺** | Last updated: 28 July 2026
+**Made with ❤ in Moscow 🇷🇺** | Last updated: 28 July 2026
 
 </div>
